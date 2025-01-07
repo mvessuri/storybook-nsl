@@ -20,14 +20,14 @@ export const Default: Story = {
   args: {
     heading: 'Welcome to Our Site',
     subheading: 'We are glad to have you here.',
-    backgroundImage: 'https://picsum.photos/1500/500',
+    backgroundImage: 'https://picsum.photos/id/921/1500/500',
   },
 };
 
 export const WithoutSubheading: Story = {
   args: {
     heading: 'Welcome to Our Site',
-    backgroundImage: 'https://picsum.photos/1500/500',
+    backgroundImage: 'https://picsum.photos/id/921/1500/500',
   },
 };
 
@@ -35,10 +35,18 @@ export const WithActionButton: Story = {
   args: {
     heading: 'Welcome to Our Site',
     subheading: 'We are glad to have you here.',
-    backgroundImage: 'https://picsum.photos/1500/500',
+    backgroundImage: 'https://picsum.photos/id/921/1500/500',
     actionButton: {
       text: 'Click Me',
       onClick: () => alert('Button clicked!'),
     },
+  },
+};
+
+export const RandomImage: Story = {
+  args: {
+    heading: 'Welcome to Our Site',
+    subheading: 'We are glad to have you here.',
+    backgroundImage: 'https://picsum.photos/1500/500',
   },
 };

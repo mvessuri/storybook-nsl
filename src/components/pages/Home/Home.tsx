@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       <Hero
         heading="Welcome to Our Site"
         subheading="We are glad to have you here."
-        backgroundImage="https://picsum.photos/1500/500"
+        backgroundImage="https://picsum.photos/id/921/1500/500"
         actionButton={{ text: 'Learn More', onClick: () => alert('Button clicked!') }}
       />
       <div className="content">
