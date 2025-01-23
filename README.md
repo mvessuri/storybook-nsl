@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# Storybook NSL
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project uses Storybook for component development and testing.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+These instructions will help you set up and run Storybook on your local machine.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js (version 18 or later recommended)
+- npm (usually comes with Node.js)
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone the repository:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+git clone https://github.com/mvessuri/storybook-nsl.git
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. Install dependencies:
+
+npm install
+
+
+## Running Storybook
+
+To start Storybook, run the following command in your terminal:
+
+npm run storybook
+
+
+This will start Storybook on port 6006. Open your browser and navigate to `http://localhost:6006` to view your Storybook.
+
+## Building Storybook
+
+To build a static version of Storybook, use:
+
+npm run build-storybook
+
+
+This will create a static Storybook in the `storybook-static` directory.
+
+
+This will create a static Storybook in the `storybook-static` directory.
+
+## Running Chromatic
+
+This project is set up with Chromatic for visual testing. To run Chromatic:
+
+npm run chromatic
+
